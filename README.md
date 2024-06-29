@@ -1,2 +1,2 @@
 # Crime-Reporter
-Crime Reporter using Node, React and MySQL
+Crime Reporter using HTML, CSS, JavaScript, OpenStreetMap API, Gemini AI API
