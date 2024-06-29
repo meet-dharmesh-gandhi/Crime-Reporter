@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika Negative", sans-serif;
+}
+
+::-moz-selection {
+    color: #ebf8f1;
+    background: #2cba6c;
+}
+  ::selection {
+    color: #ebf8f1;
+    background: #2cba6c;
+}
+
+body {
+    background-color: #121212 !important;
+    color: #fff;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+ul li {
+    margin-right: 20px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px !important;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d9534f;
+}
+
+.form {
+    padding: 40px 0;
+}
+
+.containers {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #444;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: black;
+}
+
+.form-control {
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #d9534f;
+    box-shadow: 0 0 5px rgba(217, 83, 79, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(217, 83, 79, 0.5);
+}
+
+@media (max-width: 768px) {
+    .containers {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containers {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    .form-control {
+        padding: 6px;
+    }
+
+    .submit-btn {
+        padding: 6px;
+    }
+}

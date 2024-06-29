@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika Negative", sans-serif;
+}
+
+::-moz-selection {
+    color: #ebf8f1;
+    background: #2cba6c;
+}
+  ::selection {
+    color: #ebf8f1;
+    background: #2cba6c;
+}
+
+body {
+    background-color: rgb(22, 21, 21) !important;
+    color: white;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+ul li {
+    margin-right: 20px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px !important;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d9534f;
+}
+
+.btn-info {
+    background-color: rgba(0, 123, 255, 0.5);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: red !important;
+    color: white !important;
+    font-weight: bold;
+    transform: translateY(-3px);
+}
+
+.content h1 {
+    font-size: 80px !important;
+    animation: fadeIn 2s ease-in-out;
+    color: white;
+}
+
+.content p {
+    margin-top: 40px;
+    font-size: 25px;
+    margin-bottom: 60px;
+    animation: slideInFromRight 1s ease-in-out;
+    color: white;
+}
+
+.row {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.monitor {
+    font-weight: bold;
+    color: #d9534f;
+    animation: pulse 2s infinite;
+}
+
+.sign-up {
+    height: 60px !important;
+    padding: 12px !important;
+    font-size: 20px !important;
+    background-color: #ff6f61;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: #e04e39;
+    transform: translateY(-3px);
+}
+
+.hp-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 1s ease-in-out;
+    margin-left: 30px;
+}
+
+.chat {
+    height: 70px;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.chat:hover {
+    cursor: pointer;
+}
+
+.chat-ai {
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 426px) {
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 50px !important;
+        margin-top: 20px;
+    }
+
+    .content p {
+        font-size: 20px !important;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .hp-image {
+        width: 90% !important;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    .sign-up {
+        height: 40px !important;
+        padding: 4px !important;
+    }
+
+    .row {
+        height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width:768px) {
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 70px !important;
+        margin-top: 20px;
+    }
+
+    .content p {
+        font-size: 30px !important;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .hp-image {
+        width: 100% !important;
+        height: 300px;
+        object-fit: cover;
+        margin-left: auto;
+    }
+
+    .sign-up {
+        height: 40px !important;
+        padding: 4px !important;
+        margin-bottom: 30px;
+    }
+
+}
